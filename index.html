@@ -1,73 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Khula:300,400,600|Ubuntu:400,500,700">
+  <link rel="stylesheet" href="vendor/jquery.fullPage.css">
   <link rel="stylesheet" href="style.css">
+
   <title>Daniel Lwo</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#index-navbar-collapse-1" aria-expanded="false">
-        <!-- <span class="sr-only">Toggle navigation</span> -->
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="index-navbar-collapse-1">
-        <ul class="nav row">
-          <li data-slide="1" class="col-12 col-sm-2 active"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="text">HOME</span></a></li>
-          <li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="text">ABOUT US</span></a></li>
-          <li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="text">PORTFOLIO</span></a></li>
-          <li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="text">PROCESS</span></a></li>
-          <li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="text">CLIENTS</span></a></li>
-          <li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="text">CONTACT</span></a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-  <!-- === MAIN Background === -->
-	<div class="slide story" id="slide-1" data-slide="1">
-		<div class="container">
-			<div id="home-row-1" class="row clearfix">
-				<div class="col-12">
-					<h1 class="font-semibold">MUNTER <span class="font-thin">DESIGN</span></h1>
-					<h4 class="font-thin">We are an <span class="font-semibold">independent interactive agency</span> based in London.</h4>
-					<br>
-					<br>
-				</div><!-- /col-12 -->
-			</div><!-- /row -->
-			<div id="home-row-2" class="row clearfix">
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src="images/s02.png"></div><span>PROFESSIONAL</span></div>
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="3"><img src="images/s01.png"></div><span>FRIENDLY</span></div>
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="images/s03.png"></div><span>SUITABLE</span></div>
-			</div><!-- /row -->
-		</div><!-- /container -->
-	</div><!-- /slide1 -->
-
-
-  <div class="jumbotron">
+  <!-- <div id="header">Header</div> -->
+  <div id="footer">
     <div class="container">
-      <h1>Bootstrap Tutorial</h1>
-      <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+      <small>© 2016 Daniel Lwo, All Rights Reserved.</small>
     </div>
   </div>
-  <div class="container">
-    <p>This is some text.</p>
-    <p>This is another text.</p>
+
+  <div id="fullpage">
+    <!-- section about -->
+    <div class="section" id="about">
+      <div class="col-12" id="about-head">
+        <h1>Daniel Lwo</h1>
+        <h4>Web Developer | Debugger</h4>
+        <div>
+          <ul>
+            <a href="#"><li>Git</li></a>
+            <a href="#"><li>Link</li></a>
+          </ul>
+        </div>
+      </div>
+      <!-- About -->
+      <div class="col-12" id="about-body">
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2 hidden-xs">
+            <img class="img-responsive img-circle" src="https://avatars3.githubusercontent.com/u/10553764?v=3&s=200">
+          </div>
+          <div class="col-md-6 col-xs-8 col-xs-offset-2">
+            <h3>About Me</h3>
+            <p> Former Mechanical Engineer, turned Full Stack Web Developer, who is passionate about all kinds of technology. Fell in love with Web Development when I learned I could use both my analytical and creative abilities to create products that I
+              am proud of. Looking to solve problems that make the world better.</p>
+            <p>Outside coding I read books or play guitar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section project -->
+    <div class="section" id="projects">
+      <div class="slide" id="slide-index">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Projects</h3>
+            <ul class="project-list">
+              <a class="card col-md-5 col-sm-5 col-xs-11" target="blank" href="#secondPage/1">
+                <li class="project-item">
+                  <h4 class="project-title">PAC-MAN Racing</h4>
+                  <p class="project-desc hidden-xs">Basic Javascript experimental gaming project with HTML canvas; gameplay with coin-collect and bot-against</p>
+                  <small class="project-tech"><b>Tech Stack:</b> JavaScript, jQuery, HTML, Bootstrap</small>
+                </li>
+              </a>
+
+              <a class="card col-md-5 col-sm-5 col-xs-11" target="blank" href="">
+                <li class="project-item">
+                  <h4 class="project-title">Ex.talk</h4>
+                  <p class="project-desc hidden-xs">
+                    A full stack web application saves messages to their exes with phone number. If the recipient had also signs up for this app and sends a message to user, the text message will automatically send to user’s phone number. Includes a ‘Meet poeple’ page that
+                    shows others stories about their exes and additionally the user can write his/her own story.
+                  </p>
+                  <small class="project-tech"><b>Tech Stack:</b> JavaScript, jQuery, HTML, MongoDB, Node.js, Express, passport, handlebars, Ajax, Bootstrap</small>
+                </li>
+              </a>
+
+              <a class="card col-md-5 col-sm-5 col-xs-11" target="blank" href="">
+                <li class="project-item">
+                  <h4 class="project-title">ColorBase API</h4>
+                  <p class="project-desc hidden-xs">The ColorBase API is an open-source library of web-suitable color palettes. It is used by the ColorBase app, and has public endpoints.</p>
+                  <small class="project-tech"><b>Tech Stack:</b> JavaScript, Node.js, Express, and MongoDB</small>
+                </li>
+              </a>
+
+              <a class="card col-md-5 col-sm-5 col-xs-11" target="blank" href="">
+                <li class="project-item">
+                  <h4 class="project-title">Leo</h4>
+                  <p class="project-desc hidden-xs">Leo is an elegant, interactive workout app that visualizes the human body, making finding the right workouts for your daily routine easier.</p>
+                  <small class="project-tech"><b>Tech Stack:</b> Ruby, Rails, PostgreSQL, jQuery, ERB, and Bootstrap</small>
+                </li>
+              </a>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide project" id="slide-00">
+        <h1>PAC-MAN Racing</h1>
+        <div class="intro row col-xs-10 col-xs-offset-1">
+          <img class="img-responsive img-rounded" src="img/p0_01.png" alt="project00" />
+          <p class="project-desc">Basic Javascript experimental gaming project with HTML canvas; gameplay with coin-collect and bot-against</p>
+          <p class="project-tech"><b>Tech Stack:</b> JavaScript, jQuery, HTML, Bootstrap</p>
+          <div class="links">
+            <a href="#">Github</a>
+            <a href="#">Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide project" id="slide-01">
+
+      </div>
+    </div>
+
+    <!-- section skill -->
+    <div class="section" id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="">Skills</h3>
+          </div>
+          <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 center">
+            <p></p>
+            <ul class="skills-list">
+              <li class="skill">Javascript ES5 & ES6</li>
+              <li class="skill">HTML5</li>
+              <li class="skill">CSS3</li>
+              <li class="skill">SASS</li>
+              <li class="skill">jQuery</li>
+              <li class="skill">Performace</li>
+              <li class="skill">Responsive</li>
+              <li class="skill">ReactJS</li>
+              <li class="skill">FLUX</li>
+              <li class="skill">Redux</li>
+              <li class="skill">C3.js</li>
+              <li class="skill">REST APIs</li>
+              <li class="skill">Node.js</li>
+              <li class="skill">Express</li>
+              <li class="skill">Wordpress</li>
+              <li class="skill">PHP</li>
+              <li class="skill">Gulp</li>
+              <li class="skill">Grunt</li>
+              <li class="skill">Product Design</li>
+              <li class="skill">User Experience</li>
+              <li class="skill">Ruby</li>
+              <li class="skill">Ruby on Rails</li>
+              <li class="skill">Angluar 1</li>
+              <li class="skill">MongoDB</li>
+              <li class="skill">SQL</li>
+              <li class="skill">PostgreSQL</li>
+              <li class="skill">Git Flow</li>
+              <li class="skill">Socket.io</li>
+              <li class="skill">Illustrator CC</li>
+              <li class="skill">Photoshop CC</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+  <script type="text/javascript" src="vendor/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="vendor/jquery.fullPage.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
 </body>
 
 </html>
