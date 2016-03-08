@@ -1,7 +1,7 @@
 console.log('app.js loaded');
 
 $('#fullpage').fullpage({
-  sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+  sectionsColor: ['whitesmoke', '#4BBFC3', '#7BAABE'],
   anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
   menu: '#menu',
   scrollingSpeed: 1000,
