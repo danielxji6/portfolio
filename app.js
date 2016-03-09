@@ -1,7 +1,7 @@
 console.log('app.js loaded');
 
 $('#fullpage').fullpage({
-  sectionsColor: ['#ff8533', '#0080ff', '#33cc33'],
+  sectionsColor: ['#ff8533', '#3399ff', '#33cc33'],
   anchors: ['about-page', 'project-page', 'skill-page'],
   menu: '#menu',
   scrollingSpeed: 1000,
