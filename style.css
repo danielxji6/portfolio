@@ -15,12 +15,18 @@ a:hover {
 }
 #about-head ul {
   margin: 30px;
+  padding: 0;
 }
 #about-head li {
   display: inline;
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 10px 5px;
+}
+#about-head li img {
+  height: 50px;
+}
+#about-head #contact-p {
+  font-size: 18pt;
+  color: black;
 }
 #about-body img {
   margin: 0 auto;
@@ -28,10 +34,20 @@ a:hover {
 #about-body p {
   text-align: left;
 }
-@media (max-width:510px) {
+@media (max-width: 768px) {
   #about-head {
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  #about-head h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  #about-head h4 {
+    font-size: 9pt;
+  }
+  #about-head #contact-p {
+    font-size: 12pt;
   }
   #about-body h3 {
     margin: 10px;
@@ -40,45 +56,65 @@ a:hover {
     font-size: 12pt;
   }
 }
-#projects h3, h4 {
-  color: white;
+#projects h1, #projects h3 {
+  color: black;
   text-align: center;
 }
 #projects .project-item {
   display: inline-block;
   list-style: none;
 }
-#projects p {
+#projects .project-item p, #projects .project-item small{
+  color: black;
+  font-size: 14pt;
   text-align: left;
 }
 #projects .fp-slidesNav {
   padding-bottom: 15px;
 }
 #projects .card {
-  background-color: black;
-  height: 250px;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 350px;
   margin: 10px;
+  border-radius: 10px;
   left: 5%;
 }
 #projects .project p {
   margin-top: 20px;
   padding: 10px;
+  font-size: 16pt;
+  text-align: left;
 }
 #projects .project .links {
   margin-top: 30px;
 }
-#projects .project a {
+#projects .project a img {
+  height: 50px;
   margin: 10px;
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
 }
-@media (max-width:510px) {
+@media (max-width: 768px) {
   #projects .card {
-    height: 100px;
-    width: 70%;
-    margin-bottom: 10px;
+    height: 110px;
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 8px 8px 3px #444444;
+    margin-bottom: 5px;
     margin-left: 5%;
+  }
+  #projects h3 {
+    font-size: 14pt;
+    margin-top: 45px;
+  }
+  #projects .project h1 {
+    font-size: 24pt;
+    margin: 10px;
+  }
+  #projects .project p {
+    font-size: 11pt;
+    margin: 0;
+  }
+  #projects .project .links {
+    margin-top: 15px;
   }
   #projects .fp-next {
     border-width: 20px 0 20px 15px;
@@ -87,16 +123,39 @@ a:hover {
     border-width: 20px 15px 20px 0;
   }
 }
+#skills {
+  color: black;
+}
+#skills h1 {
+  padding-bottom: 50px;
+}
+#skills h3 {
+  text-align: left;
+  padding-left: 40px;
+}
 #skills .skills-list {
+  width: 300px;
   text-align: left;
 }
-#skills .skills-list li {
+#skills .skills-list .skill {
   display: inline-block;
   color: white;
   background-color: black;
   padding: 4px 8px;
   margin-bottom: 5px;
   border-radius: 3px;
+}
+#to-top {
+  height: 100px;
+  margin: 50px auto;
+  background-color: black;
+  padding: 20px;
+  border-radius: 50px;
+}
+@media (max-width: 768px) {
+  #skills h1 {
+    padding-bottom: 10px;
+  }
 }
 #header, #footer {
   position: fixed;
@@ -109,7 +168,7 @@ a:hover {
   color: #f2f2f2;
   padding: 10px 0 0 0;
 }
-@media (max-width:510px) {
+@media (max-width: 768px) {
   #header, #footer {
     height: 25px;
     text-align: left;
