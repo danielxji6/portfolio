@@ -1,8 +1,9 @@
+* {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
 a:hover {
   text-decoration: none;
-}
-.section {
-  text-align: center;
 }
 #about-head {
   background-color: black;
@@ -70,14 +71,18 @@ a:hover {
   text-align: left;
 }
 #projects .fp-slidesNav {
-  padding-bottom: 15px;
+  padding-bottom: 18px;
 }
 #projects .card {
   background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 8px 8px 3px #444444;
   height: 350px;
   margin: 10px;
   border-radius: 10px;
   left: 5%;
+}
+#projects .card p {
+  padding: 15px;
 }
 #projects .project p {
   margin-top: 20px;
@@ -85,8 +90,12 @@ a:hover {
   font-size: 16pt;
   text-align: left;
 }
+#projects img {
+  height: 500px;
+  margin: 0 auto;
+}
 #projects .project .links {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 #projects .project a img {
   height: 50px;
@@ -146,7 +155,7 @@ a:hover {
   border-radius: 3px;
 }
 #to-top {
-  height: 100px;
+  height: 70px;
   margin: 50px auto;
   background-color: black;
   padding: 20px;
@@ -155,6 +164,14 @@ a:hover {
 @media (max-width: 768px) {
   #skills h1 {
     padding-bottom: 10px;
+  }
+  #skills h3 {
+    margin: 10px 0;
+  }
+  #to-top {
+    height: 30px;
+    margin: 10px auto;
+    padding: 10px;
   }
 }
 #header, #footer {
