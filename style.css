@@ -33,6 +33,7 @@ a:hover {
   margin: 0 auto;
 }
 #about-body p {
+  font-size: 16pt;
   text-align: left;
 }
 @media (max-width: 768px) {
