@@ -100,9 +100,6 @@ a:hover {
   height: 500px;
   margin: 0 auto;
 }
-#projects .project .links {
-  margin-top: 20px;
-}
 #projects .project a img {
   height: 50px;
   margin: 10px;
@@ -130,9 +127,6 @@ a:hover {
   #projects .project p {
     font-size: 11pt;
     margin: 0;
-  }
-  #projects .project .links {
-    margin-top: 5px;
   }
   #projects .project a img {
     height: 30px;
