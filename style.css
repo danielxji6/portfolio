@@ -47,6 +47,12 @@ a:hover {
   #about-head h4 {
     font-size: 9pt;
   }
+  #about-head li {
+    padding: 3px;
+  }
+  #about-head li img {
+    height: 40px;
+  }
   #about-head #contact-p {
     font-size: 12pt;
   }
@@ -103,7 +109,7 @@ a:hover {
 }
 @media (max-width: 768px) {
   #projects .card {
-    height: 110px;
+    height: 80px;
     width: 65%;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 8px 8px 3px #444444;
@@ -112,7 +118,10 @@ a:hover {
   }
   #projects h3 {
     font-size: 14pt;
-    margin-top: 45px;
+    margin-top: 30px;
+  }
+  #projects img {
+    height: 100px;
   }
   #projects .project h1 {
     font-size: 24pt;
@@ -123,7 +132,11 @@ a:hover {
     margin: 0;
   }
   #projects .project .links {
-    margin-top: 15px;
+    margin-top: 5px;
+  }
+  #projects .project a img {
+    height: 30px;
+    margin: 5px;
   }
   #projects .fp-next {
     border-width: 20px 0 20px 15px;
@@ -163,14 +176,15 @@ a:hover {
 }
 @media (max-width: 768px) {
   #skills h1 {
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
   #skills h3 {
-    margin: 10px 0;
+    margin: 0;
   }
   #to-top {
+    position: absolute;
     height: 30px;
-    margin: 10px auto;
+    margin: 0 10px 0 80%;
     padding: 10px;
   }
 }
