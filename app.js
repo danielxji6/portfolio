@@ -25,6 +25,9 @@ $('.icon').hover(function() {
     case 'linkedin':
       text = 'Find me on LinkedIn';
       break;
+    case 'resume':
+      text = 'See my resume';
+      break;
   }
 
   $('#phone').click(function functionName() {
