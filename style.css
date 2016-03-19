@@ -8,7 +8,7 @@ a:hover {
 #about-head {
   background-color: black;
   color: white;
-  padding: 50px;
+  padding: 30px;
   margin-bottom: 50px;
 }
 #about-head h1 {
@@ -65,6 +65,7 @@ a:hover {
   }
 }
 #projects h1, #projects h3 {
+  margin: 0;
   color: black;
   text-align: center;
 }

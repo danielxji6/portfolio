@@ -5,7 +5,6 @@ $('#fullpage').fullpage({
   anchors: ['about-page', 'project-page', 'skill-page'],
   menu: '#menu',
   scrollingSpeed: 1000,
-  verticalCentered: false,
   slidesNavigation: true,
 });
 
