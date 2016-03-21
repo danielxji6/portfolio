@@ -36,6 +36,15 @@ a:hover {
   font-size: 16pt;
   text-align: left;
 }
+#about-body .more img {
+  height: 50px
+}
+@media (max-height: 900px) {
+
+  #about-body p {
+    font-size: 12pt;
+  }
+}
 @media (max-width: 768px) {
   #about-head {
     padding: 20px;
@@ -68,6 +77,9 @@ a:hover {
   margin: 0;
   color: black;
   text-align: center;
+}
+#projects h1 {
+  padding-top: 15px;
 }
 #projects .project-item {
   display: inline-block;
@@ -163,13 +175,7 @@ a:hover {
   margin-bottom: 5px;
   border-radius: 3px;
 }
-#to-top {
-  height: 70px;
-  margin: 50px auto;
-  background-color: black;
-  padding: 20px;
-  border-radius: 50px;
-}
+
 @media (max-width: 768px) {
   #skills h1 {
     padding-bottom: 0;
@@ -177,34 +183,45 @@ a:hover {
   #skills h3 {
     margin: 0 0 3px 0;
   }
-  #to-top {
-    position: absolute;
-    height: 30px;
-    margin: 0 10px 0 80%;
-    padding: 10px;
-  }
 }
-#header, #footer {
-  position: fixed;
+#footer {
+  position: absolute;
   height: 40px;
   display: block;
   width: 100%;
   background: #333;
-  z-index: 9;
+  z-index: 2;
   text-align: center;
   color: #f2f2f2;
   padding: 10px 0 0 0;
+  bottom: 0px;
+}
+#to-top {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;;
+  z-index: 2;
+  text-align: center;
+}
+#to-top img {
+  height: 70px;
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 20px;
+  border-radius: 50px;
 }
 @media (max-width: 768px) {
-  #header, #footer {
+  #to-top {
+    right: 15px;
+    bottom: 3px;;
+  }
+  #to-top img {
+    height: 35px;
+    padding: 10px;
+  }
+  #footer {
     height: 25px;
     text-align: left;
     padding: 3px 0 0 0;
   }
-}
-#header {
-  top: 0px;
-}
-#footer {
-  bottom: 0px;
 }

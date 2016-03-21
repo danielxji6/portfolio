@@ -6,6 +6,29 @@ $('#fullpage').fullpage({
   menu: '#menu',
   scrollingSpeed: 1000,
   slidesNavigation: true,
+  verticalCentered: false,
+
+  afterLoad: function(anchorLink, index) {
+    if (index == 1) {
+      $('#to-top').fadeOut();
+    }
+    if (index == 2 || index == 3) {
+      console.log('hs');
+      $('#to-top').fadeIn();
+    }
+  }
+});
+
+var offset = 300,
+  $back_to_top = $('#to-top');
+
+//hide or show the "back to top" link
+$(window).scroll(function() {
+  if ($(this).scrollTop() > offset) {
+    $back_to_top.addClass('cd-is-visible');
+  } else {
+    $back_to_top.removeClass('cd-is-visible cd-fade-out');
+  }
 });
 
 $('.icon').hover(function() {
