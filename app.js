@@ -13,7 +13,6 @@ $('#fullpage').fullpage({
       $('#to-top').fadeOut();
     }
     if (index == 2 || index == 3) {
-      console.log('hs');
       $('#to-top').fadeIn();
     }
   }
