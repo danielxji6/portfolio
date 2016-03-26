@@ -9,7 +9,7 @@ a:hover {
   background-color: black;
   color: white;
   padding: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 #about-head h1 {
   margin: 30px;
@@ -29,15 +29,15 @@ a:hover {
   font-size: 18pt;
   color: black;
 }
+#about-body {
+  height: 40vh;
+}
 #about-body img {
   margin: 0 auto;
 }
 #about-body p {
   font-size: 16pt;
   text-align: left;
-}
-#about-body .more img {
-  height: 50px
 }
 @media (max-height: 900px) {
   #about-body p {
@@ -81,7 +81,7 @@ a:hover {
 #projects .card {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 8px 8px 3px #444444;
-  height: 300px;
+  height: 35vh;
   margin: 10px;
   border-radius: 10px;
   left: 5%;
@@ -113,7 +113,7 @@ a:hover {
   text-align: left;
 }
 #projects img {
-  height: 300px;
+  height:35vh;
   margin: 0 auto;
 }
 #projects .project a img {
