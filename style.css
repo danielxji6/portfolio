@@ -40,7 +40,6 @@ a:hover {
   height: 50px
 }
 @media (max-height: 900px) {
-
   #about-body p {
     font-size: 12pt;
   }
@@ -77,32 +76,35 @@ a:hover {
   margin: 0;
   color: black;
   text-align: center;
-}
-#projects h1 {
   padding-top: 15px;
+}
+#projects .card {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 8px 8px 3px #444444;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  left: 5%;
 }
 #projects .project-item {
   display: inline-block;
   list-style: none;
 }
-#projects .project-item p, #projects .project-item small{
+#projects .project-item hr {
+  margin: 4px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), #333, rgba(0, 0, 0, 0.1));
+}
+#projects .project-desc, #projects .project-tech {
+  padding: 10px;
+  margin: 0;
   color: black;
-  font-size: 14pt;
+  font-size: 13pt;
   text-align: left;
 }
 #projects .fp-slidesNav {
   padding-bottom: 18px;
-}
-#projects .card {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 8px 8px 3px #444444;
-  height: 350px;
-  margin: 10px;
-  border-radius: 10px;
-  left: 5%;
-}
-#projects .card p {
-  padding: 15px;
 }
 #projects .project p {
   margin-top: 20px;
@@ -111,7 +113,7 @@ a:hover {
   text-align: left;
 }
 #projects img {
-  height: 500px;
+  height: 300px;
   margin: 0 auto;
 }
 #projects .project a img {
@@ -175,7 +177,6 @@ a:hover {
   margin-bottom: 5px;
   border-radius: 3px;
 }
-
 @media (max-width: 768px) {
   #skills h1 {
     padding-bottom: 0;
@@ -199,7 +200,8 @@ a:hover {
 #to-top {
   position: absolute;
   right: 40px;
-  bottom: 20px;;
+  bottom: 20px;
+  ;
   z-index: 2;
   text-align: center;
 }
@@ -213,7 +215,8 @@ a:hover {
 @media (max-width: 768px) {
   #to-top {
     right: 15px;
-    bottom: 3px;;
+    bottom: 3px;
+    ;
   }
   #to-top img {
     height: 35px;
